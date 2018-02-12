@@ -3,8 +3,8 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class OrganicTest {
-	Organic testPet = new Cat("Test","Cat");
-	
+	Organic testPet = new Cat("Test", "Cat");
+
 	@Test
 	public void shouldReturnName() {
 		String check = testPet.getName();
@@ -60,7 +60,7 @@ public class OrganicTest {
 		int check = testPet.getThirst();
 		assertEquals(check, -30);
 	}
-	
+
 	@Test
 	public void shouldPlayWithPet() {
 		testPet.play();

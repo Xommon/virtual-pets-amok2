@@ -6,7 +6,11 @@ public class RobotCat extends Robotic {
 
 	@Override
 	public void tick() {
-		
+		boredom += 4;
+		oil -= 1;
+		if (oil <= 0) {
+			health -= 10;
+		}
 	}
 
 }

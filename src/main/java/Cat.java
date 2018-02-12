@@ -6,14 +6,13 @@ public class Cat extends Organic {
 
 	int potty = 0;
 
-	public void poop() {
-		potty = 0;
-	}
-
 	public void tick() {
 		hunger += 2;
 		thirst += 4;
-		potty += 4;
+		potty += 7;
 		boredom += 3;
+		if (hunger >= 100 || thirst >= 100) {
+			health -= 10;
+		}
 	}
 }

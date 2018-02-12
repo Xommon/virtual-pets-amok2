@@ -11,12 +11,12 @@ public class CatTest {
 		int check = testCat.getPotty();
 		assertEquals(check, 0);
 	}
-	
+
 	@Test
 	public void shouldTickCat() {
 		testCat.tick();
 		int check = testCat.getHunger();
-		assertEquals(2,check);
+		assertEquals(2, check);
 	}
 
 }

@@ -25,7 +25,7 @@ public class DogTest {
 		int check = testPet.getBoredom();
 		assertEquals(1, check);
 	}
-	
+
 	@Test
 	public void shouldGetName() {
 		testPet.getName();

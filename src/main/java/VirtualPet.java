@@ -16,10 +16,16 @@ public abstract class VirtualPet {
 	public int getBoredom() {
 		return boredom;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
+	public void play() {
+		boredom -= 30;
+	}
+
+	public abstract void capAll();
+
 	public abstract void tick();
 }

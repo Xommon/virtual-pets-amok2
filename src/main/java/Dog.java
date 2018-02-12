@@ -28,8 +28,23 @@ public class Dog extends Organic implements Walkable {
 		thirst += 2;
 		potty += 3;
 		boredom += 1;
+		if (potty >= 100) {
+			cageClean = false;
+			potty = 0;
+		}
 		if (cageClean = false) {
 			happiness -= 8;
+		} else {
+			happiness += 2;
 		}
+		if (hunger >= 100 || thirst >= 100) {
+			health -= 10;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return String.format("%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-10s", name, description, health, happiness,
+				boredom, hunger, thirst, potty, "", cageClean);
 	}
 }
